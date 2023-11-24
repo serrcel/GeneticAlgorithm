@@ -17,6 +17,7 @@ namespace GeneticAlgorithm
 
             Algorithm geneticAlgorithm = new Algorithm();
             geneticAlgorithm.Run(numRange);
+            Console.ReadLine();
         }
     }
 }

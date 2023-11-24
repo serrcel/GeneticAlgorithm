@@ -89,7 +89,7 @@ namespace GeneticAlgorithm.Logic
                     population.individuals.Add(child);
                 }
                 // Отбираем тех, у кого y - самый маленький, тк ищем минимум
-                SelectIndividuals(population, OptimizationWay.Max);
+                SelectIndividuals(population, OptimizationWay.Min);
                 generation++;
 
                 Console.WriteLine($"Поколение: {generation}, минимум y = {population.individuals.First().Fitness} при x = {population.individuals.First().DecimalGen}");
